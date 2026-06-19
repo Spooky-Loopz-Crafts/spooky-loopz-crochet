@@ -309,13 +309,13 @@ h3 {
   padding: 20px;
   border-left: 5px solid var(--accent);
   border-radius: 8px;
-  background: var(--panel);
-  color: var(--muted);
+  background: var(--button-alt);
+  color: var(--panel);
 }
 
 .process strong {
   display: block;
-  color: var(--ink);
+  color: #fff;
 }
 
 .contact {
