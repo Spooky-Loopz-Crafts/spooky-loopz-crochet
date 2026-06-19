@@ -7,6 +7,8 @@
   --line: rgba(115, 59, 115, 0.28);
   --accent: #5E095E;
   --accent-mid: #733B73;
+  --header: #592A59;
+  --button-alt: #954795;
   --accent-soft: #FFADFF;
   --shadow: 0 18px 45px rgba(94, 9, 94, 0.16);
 }
@@ -45,9 +47,10 @@ a {
   justify-content: space-between;
   gap: 24px;
   padding: 18px clamp(18px, 4vw, 56px);
-  border-bottom: 1px solid rgba(115, 59, 115, 0.32);
-  background: rgba(218, 177, 218, 0.94);
+  border-bottom: 1px solid rgba(218, 177, 218, 0.42);
+  background: var(--header);
   backdrop-filter: blur(14px);
+  color: var(--paper);
 }
 
 .brand {
@@ -64,8 +67,8 @@ a {
   height: 40px;
   place-items: center;
   border-radius: 50%;
-  background: var(--accent);
-  color: var(--accent-soft);
+  background: var(--paper);
+  color: var(--header);
   font-size: 0.8rem;
   letter-spacing: 0;
 }
@@ -75,7 +78,7 @@ a {
   flex-wrap: wrap;
   justify-content: flex-end;
   gap: 8px 20px;
-  color: var(--muted);
+  color: var(--paper);
   font-size: 0.95rem;
 }
 
@@ -185,6 +188,12 @@ h3 {
   border-color: var(--accent-mid);
 }
 
+.hero-actions .button.secondary {
+  background: var(--button-alt);
+  border-color: var(--button-alt);
+  color: #fff;
+}
+
 .button.primary:hover,
 .button.primary:focus,
 .button.small:hover,
@@ -196,6 +205,12 @@ h3 {
 .button.secondary:hover,
 .button.secondary:focus {
   background: var(--accent-soft);
+}
+
+.hero-actions .button.secondary:hover,
+.hero-actions .button.secondary:focus {
+  background: var(--accent-mid);
+  border-color: var(--accent-mid);
 }
 
 .button.small {
