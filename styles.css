@@ -123,7 +123,7 @@ p {
 
 h1 {
   margin-bottom: 20px;
-  font-size: clamp(3rem, 7vw, 6.8rem);
+  font-size: clamp(2.75rem, 6.2vw, 6.2rem);
   line-height: 0.92;
   letter-spacing: 0;
 }
@@ -148,6 +148,10 @@ h3 {
   max-width: 680px;
   color: var(--muted);
   font-size: 1.08rem;
+}
+
+.hero-copy > p:not(.eyebrow) {
+  font-size: 1.18rem;
 }
 
 .hero-actions,
@@ -387,7 +391,7 @@ h3 {
   }
 
   h1 {
-    font-size: 3.15rem;
+    font-size: 2.95rem;
   }
 
   .product-grid {
