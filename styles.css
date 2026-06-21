@@ -46,7 +46,7 @@ a {
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  padding: 18px clamp(18px, 4vw, 56px);
+  padding: 8px clamp(18px, 4vw, 56px);
   border-bottom: 1px solid rgba(218, 177, 218, 0.42);
   background: var(--header);
   backdrop-filter: blur(14px);
@@ -62,8 +62,8 @@ a {
 }
 
 .brand-mark {
-  width: 48px;
-  height: 48px;
+  width: 68px;
+  height: 68px;
   object-fit: contain;
 }
 
